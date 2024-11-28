@@ -4,7 +4,7 @@ export default function PublicLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="https://use.typekit.net/djp0ftq.css" />
+        <link rel="stylesheet" href={`https://use.typekit.net/${process.env.NEXT_PUBLIC_ADOBE_FONTS_KIT_ID}.css`} />
       </head>
       <body>
         <div className="public-layout">
@@ -13,7 +13,7 @@ export default function PublicLayout({ children }) {
           </header>
           <main>{children}</main>
           <footer>
-            <p> 2024 My Website</p>
+            <p>© 2024 My Website</p>
           </footer>
         </div>
       </body>
