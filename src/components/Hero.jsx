@@ -6,8 +6,8 @@ export default function Hero({ heading, subheading, backgroundImage, buttonText,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           padding: '50px 20px',
-          color: '#fff',
-          textAlign: 'center',
+          color: '#000',
+          textAlign: 'left',
         }}
       >
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
@@ -18,12 +18,15 @@ export default function Hero({ heading, subheading, backgroundImage, buttonText,
               href={buttonLink}
               style={{
                 display: 'inline-block',
+
                 marginTop: '20px',
                 padding: '10px 20px',
-                backgroundColor: '#0070f3',
-                color: '#fff',
+                backgroundColor: '#fffef5',
+                color: '#885fff',
                 textDecoration: 'none',
-                borderRadius: '5px',
+                borderRadius: '100px',
+                border: '1px solid #885fff',
+                textTransform: 'uppercase',
               }}
             >
               {buttonText}
